@@ -1,7 +1,7 @@
 {
     "name": "${environmentName}",
     "description": "RocketChat",
-    "version": "0.0.3",
+    "version": "0.0.1",
     "author": "https://github.com/lbthomsen",
     "ssh-key": "lth", 
     "containers": [
@@ -33,18 +33,6 @@
             {
                 "key": "domain_name",
                 "value": "${domainName}"
-            }, 
-            {
-                "key": "db",
-                "value": "${db}"
-            }, 
-            {
-                "key": "db_user",
-                "value": "${dbUser}"
-            }, 
-            {
-                "key": "db_pwd",
-                "value": "${dbPwd}"
             }
         ],
         "groups": [
@@ -67,24 +55,6 @@
             "description": "Enter the application domain name",
             "type": "domain",
             "default": "change.the.domain",
-            "validation": "[a-zA-Z0-9]+"
-        },
-        "db": {
-            "description": "Nextgen database name",
-            "type": "string",
-            "default": "nextgen", 
-            "validation": "[a-zA-Z0-9]+"
-        },        
-        "dbUser": {
-            "description": "Nextgen database user",
-            "type": "string",
-            "default": "nextgen", 
-            "validation": "[a-zA-Z0-9]+"
-        },
-        "dbPwd": {
-            "description": "Nextgen database password",
-            "type": "string",
-            "default": "nextgen", 
             "validation": "[a-zA-Z0-9]+"
         },
         "webContainerName": {
