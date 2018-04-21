@@ -22,6 +22,11 @@
   remote_user: root
   tasks: 
 
+    - name: Add nodejs key
+      apt_key:
+        keyserver: keys.gnupg.net
+        id: "1655A0AB68576280"
+
     - name: Add mongodb key
       apt_key:
         keyserver: keyserver.ubuntu.com
